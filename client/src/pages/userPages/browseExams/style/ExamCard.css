@@ -1,0 +1,32 @@
+.exam-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .exam-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .exam-card-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .exam-card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .exam-card-duration {
+    font-size: 14px;
+  }
+  
+  .exam-card-questions {
+    font-size: 14px;
+  }

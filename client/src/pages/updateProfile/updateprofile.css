@@ -1,0 +1,47 @@
+.update-profile-container {
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.update-profile-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.update-profile-container form {
+    margin-top: 24px;
+}
+
+.update-profile-container form label {
+    font-weight: 600;
+}
+
+.update-profile-container form input,
+.update-profile-container form button {
+    border-radius: 999px;
+    padding: 12px 24px;
+    margin-top: 8px;
+}
+
+.update-profile-container form input:focus,
+.update-profile-container form button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.update-profile-container form button {
+    background-color: #1877f2;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.update-profile-container form button:hover {
+    background-color: #166fe5;
+}

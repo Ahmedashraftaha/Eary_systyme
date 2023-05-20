@@ -1,0 +1,30 @@
+.exam-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .questions-container {
+    margin-top: 40px;
+  }
+  
+  .add-question-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .add-question-button:hover {
+    background-color: #0062cc;
+  }
+  
+  .add-question-button svg {
+    margin-right: 10px;
+  }
+  

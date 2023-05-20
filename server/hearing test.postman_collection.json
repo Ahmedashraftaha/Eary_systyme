@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "dbc3a912-a840-4a16-ac9a-89ae748be570",
+		"name": "hearing test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crud-on-exams",
+			"item": [
+				{
+					"name": "crud-on-exams",
+					"item": [
+						{
+							"name": "localhost:4000/api/exams/manage/questions",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"type\": \"MCQ-Single888\",\r\n        \"header\": \"what did888 you expect ?\",\r\n        \"description\": \"here i8888t is what it is\",\r\n        \"state\": \"ACTIVE\",\r\n        \"rank\": 8,\r\n        \"file_path\": \".mp3\",\r\n        \"icon_path\": \".img\",\r\n        \"default_point\": 55,\r\n        \"answers\": [\r\n            {\r\n                \"answer\": \"m8\",\r\n                \"is_correct\": 0,\r\n                \"point\": 888\r\n            },\r\n            {\r\n                \"answer\": \"mmmmmmmmm88mmmmmmmm\",\r\n                \"is_correct\": 0,\r\n                \"point\": 88\r\n            },\r\n            {\r\n                \"answer\": \"mmm88mm\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"type\": \"MCQ_SINGLE 11\",\r\n        \"header\": \"what did you expect from that point 11\",\r\n        \"description\": \"11focus on the target to get the correct answers\",\r\n        \"state\": \"ACTIVE\",\r\n        \"rank\": 2,\r\n        \"file_path\": \"a1.mp3\",\r\n        \"icon_path\": \"c111.img\",\r\n        \"default_point\": 9311,\r\n        \"answers\": [\r\n            {\r\n                \"answer\": \"m1111111111111\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            },\r\n            {\r\n                \"answer\": \"mmmmmmmmmmmmmm1111111111mmm\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            },\r\n            {\r\n                \"answer\": \"xxxxxbbbbbbbbbbbbbbbbxxxxxx\",\r\n                \"point\": 12345,\r\n                \"is_correct\": 0\r\n            }\r\n        ]\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/53",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"53"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "localhost:4000/api/exams/manage/questions",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n    {\r\n        \"type\": \"MCQ-Single888\",\r\n        \"header\": \"what did888 you expect ?\",\r\n        \"description\": \"here i8888t is what it is\",\r\n        \"state\": \"ACTIVE\",\r\n        \"rank\": 8,\r\n        \"file_path\": \".mp3\",\r\n        \"icon_path\": \".img\",\r\n        \"default_point\": 55,\r\n        \"answers\": [\r\n            {\r\n                \"answer\": \"m8\",\r\n                \"is_correct\": 0,\r\n                \"point\": 888\r\n            },\r\n            {\r\n                \"answer\": \"mmmmmmmmm88mmmmmmmm\",\r\n                \"is_correct\": 0,\r\n                \"point\": 0\r\n            },\r\n            {\r\n                \"answer\": \"mmm88mm\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"type\": \"MCQ_SINGLE 11\",\r\n        \"header\": \"what did you expect from that point 11\",\r\n        \"description\": \"11focus on the target to get the correct answers\",\r\n        \"state\": \"ACTIVE\",\r\n        \"rank\": 2,\r\n        \"file_path\": \"a1.mp3\",\r\n        \"icon_path\": \"c111.img\",\r\n        \"default_point\": 9311,\r\n        \"answers\": [\r\n            {\r\n                \"answer\": \"m1111111111111\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            },\r\n            {\r\n                \"answer\": \"mmmmmmmmmmmmmm1111111111mmm\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            },\r\n            {\r\n                \"answer\": \"xxxxxxxxxxx\",\r\n                \"point\": 12345,\r\n                \"is_correct\": 0\r\n            }\r\n        ]\r\n    }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/53",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"53"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "222"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"de-TjP68O4ggJd3SvpLQkIqVy8HNLI\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 09:37:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"errorExistInInsertingQuestions\": false,\n    \"questions\": {\n        \"insertedIdFrom\": 37,\n        \"successfullyToAdd\": 2\n    },\n    \"answers\": {\n        \"37\": {\n            \"insertedIdFrom\": 0,\n            \"successfullyToAdd\": 3\n        },\n        \"38\": {\n            \"insertedIdFrom\": 0,\n            \"successfullyToAdd\": 3\n        },\n        \"errorExistIn\": []\n    }\n}"
+								},
+								{
+									"name": "localhost:4000/api/exams/manage/questions",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n    {\r\n        \"type\": \"MCQ-Single888\",\r\n        \"header\": \"what did888 you expect ?\",\r\n        \"description\": \"here i8888t is what it is\",\r\n        \"state\": \"ACTIVE\",\r\n        \"rank\": 8,\r\n        \"file_path\": \".mp3\",\r\n        \"icon_path\": \".img\",\r\n        \"default_point\": 55,\r\n        \"answers\": [\r\n            {\r\n                \"answer\": \"m8\",\r\n                \"is_correct\": 0,\r\n                \"point\": 888\r\n            },\r\n            {\r\n                \"answer\": \"mmmmmmmmm88mmmmmmmm\",\r\n                \"is_correct\": 0,\r\n                \"point\": 88\r\n            },\r\n            {\r\n                \"answer\": \"mmm88mm\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"type\": \"MCQ_SINGLE 11\",\r\n        \"header\": \"what did you expect from that point 11\",\r\n        \"description\": \"11focus on the target to get the correct answers\",\r\n        \"state\": \"ACTIVE\",\r\n        \"rank\": 2,\r\n        \"file_path\": \"a1.mp3\",\r\n        \"icon_path\": \"c111.img\",\r\n        \"default_point\": 9311,\r\n        \"answers\": [\r\n            {\r\n                \"answer\": \"m1111111111111\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            },\r\n            {\r\n                \"answer\": \"mmmmmmmmmmmmmm1111111111mmm\",\r\n                \"is_correct\": 1,\r\n                \"point\": 123\r\n            },\r\n            {\r\n                \"answer\": \"xxxxxbbbbbbbbbbbbbbbbxxxxxx\",\r\n                \"point\": 12345,\r\n                \"is_correct\": 0\r\n            }\r\n        ]\r\n    }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/53",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"53"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/53",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"53"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "localhost:4000/api/exams/manage/questions/44",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/44",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"44"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "9883"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"269b-3rtaT0VBmOOXItZJvKPueIMz4oo\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 09:52:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"question_id\": 25,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:09:20.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:09:20\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:09:20\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:09:20\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 26,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:09:20.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:09:20\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:09:20\"\n            ],\n            [\n                2,\n                \"1111111111mm11mmm\",\n                1,\n                123,\n                \"2023-05-08 12:09:20\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 31,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:35:25.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:35:25\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:35:25\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:35:25\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 32,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:35:25.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:35:25\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:35:25\"\n            ],\n            [\n                2,\n                \"1111111111mm11mmm\",\n                1,\n                123,\n                \"2023-05-08 12:35:25\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 33,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:36:11.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:36:11\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:36:11\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:36:11\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 34,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:36:11.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:36:11\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:36:11\"\n            ],\n            [\n                2,\n                \"1111111111mm11mmm\",\n                1,\n                123,\n                \"2023-05-08 12:36:11\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 35,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:36:18.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:36:18\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:36:18\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:36:18\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 36,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:36:18.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:36:18\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:36:18\"\n            ],\n            [\n                2,\n                \"1111111111mm11mmm\",\n                1,\n                123,\n                \"2023-05-08 12:36:18\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 37,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:37:05.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:37:05\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:37:05\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:37:05\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 38,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:37:05.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:37:05\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:37:05\"\n            ],\n            [\n                2,\n                \"xxxxxxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:37:05\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 39,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:41:39.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:41:39\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:41:39\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:41:39\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 40,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:41:39.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:41:39\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:41:39\"\n            ],\n            [\n                2,\n                \"xxxxxxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:41:39\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 41,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:41:40.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:41:40\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:41:40\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:41:40\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 42,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:41:40.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:41:40\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:41:40\"\n            ],\n            [\n                2,\n                \"xxxxxxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:41:40\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 43,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:41:50.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:41:50\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:41:50\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:41:50\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 44,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:41:50.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:41:50\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:41:50\"\n            ],\n            [\n                2,\n                \"xxxxxxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:41:50\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 45,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:49:44.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:49:44\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:49:44\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:49:44\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 46,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:49:44.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:49:44\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:49:44\"\n            ],\n            [\n                2,\n                \"xxxxxxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:49:44\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 47,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:50:01.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:50:01\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:50:01\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:50:01\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 48,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:50:01.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:50:01\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:50:01\"\n            ],\n            [\n                2,\n                \"xxxxxbbbbbbbbbbbbbbbbxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:50:01\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 49,\n        \"id_exam\": 53,\n        \"type\": \"MCQ-Single888\",\n        \"header\": \"what did888 you expect ?\",\n        \"description\": \"here i8888t is what it is\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T10:50:43.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:50:43\"\n            ],\n            [\n                1,\n                \"mmmmmmmmm88mmmmmmmm\",\n                0,\n                88,\n                \"2023-05-08 12:50:43\"\n            ],\n            [\n                2,\n                \"mmm88mm\",\n                1,\n                123,\n                \"2023-05-08 12:50:43\"\n            ]\n        ]\n    },\n    {\n        \"question_id\": 50,\n        \"id_exam\": 53,\n        \"type\": \"MCQ_SINGLE 11\",\n        \"header\": \"what did you expect from that point 11\",\n        \"description\": \"11focus on the target to get the correct answers\",\n        \"state\": 0,\n        \"rank\": 2,\n        \"file_path\": \"a1.mp3\",\n        \"icon_path\": \"c111.img\",\n        \"default_point\": 9311,\n        \"created_at\": \"2023-05-08T10:50:43.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m1111111111111\",\n                1,\n                123,\n                \"2023-05-08 12:50:43\"\n            ],\n            [\n                1,\n                \"mmmmmmmmmmmmmm1111111111mmm\",\n                1,\n                123,\n                \"2023-05-08 12:50:43\"\n            ],\n            [\n                2,\n                \"xxxxxbbbbbbbbbbbbbbbbxxxxxx\",\n                0,\n                12345,\n                \"2023-05-08 12:50:43\"\n            ]\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/55",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"55"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "localhost:4000/api/exams/manage/questions/53",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/55",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"55"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "15"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f-8QzqEJl7CBFQ3pKukkZbo2EV2u4\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 09:53:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"noDeleted\": 1\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:4000/api/exams/manage/questions/",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"question_id\": 66,\r\n        \"type\": \"new new new new infi\",\r\n        \"header\": \"its11 new head\",\r\n        \"description\" : \"new dec ddfddfd\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new11 answer\",\r\n                \"is_correct\": true,\r\n                \"point\": 1123\r\n            },\r\n            \"2\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"question_id\": 39,\r\n        \"type\": \"adfadfdMCQMCQadfdsafMCQ9\",\r\n        \"header\": \"its new head9\",\r\n        \"description\": \"new dec 9\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new answer9\",\r\n                \"is_correct\": false,\r\n                \"point\": 4444\r\n            },\r\n            \"2\": {\r\n                \"answer\": \"new answer2999999 index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 22\r\n            },\r\n            \"5\": {\r\n                \"answer\": \"new 3\",\r\n                \"is_correct\": 1,\r\n                \"point\": 1231\r\n            }\r\n        }\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/53",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"53"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "localhost:4000/api/exams/manage/questions/",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n    {\r\n        \"question_id\": 66,\r\n        \"type\": \"new new new new infi\",\r\n        \"header\": \"its11 new head\",\r\n        \"description\" : \"new dec ddfddfd\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new11 answer\",\r\n                \"is_correct\": true,\r\n                \"point\": 1123\r\n            },\r\n            \"2\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"question_id\": 39,\r\n        \"type\": \"adfadfdMCQMCQadfdsafMCQ9\",\r\n        \"header\": \"its new head9\",\r\n        \"description\": \"new dec 9\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new answer9\",\r\n                \"is_correct\": false,\r\n                \"point\": 4444\r\n            },\r\n            \"2\": {\r\n                \"answer\": \"new answer2999999 index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 22\r\n            },\r\n            \"5\": {\r\n                \"answer\": \"new 3\",\r\n                \"is_correct\": 1,\r\n                \"point\": 1231\r\n            }\r\n        }\r\n    }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/53",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"53"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "419"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a3-X2SqrtHZ/9fw4r/CtR0beTifHJ0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 10:55:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"39\": [\n        {\n            \"answers\": {\n                \"39\": {\n                    \"InsertId\": 0,\n                    \"isFailed\": true,\n                    \"error\": \"FAILED TO INSERTED/UPDATED DATA : Missed For main reference ( 5 ) }\",\n                    \"id\": \"5\"\n                }\n            }\n        },\n        {\n            \"53\": {\n                \"InsertId\": 0,\n                \"isFailed\": false\n            }\n        }\n    ],\n    \"66\": [\n        {\n            \"answers\": {\n                \"INVALID_QUESTION\": [\n                    \"53\",\n                    66,\n                    [\n                        \"1\",\n                        \"2\"\n                    ]\n                ]\n            }\n        },\n        {\n            \"53\": {\n                \"InsertId\": 0,\n                \"isFailed\": true,\n                \"error\": \"FAILED TO INSERTED/UPDATED DATA : Missed For main reference ( 66 ) }\",\n                \"id\": 66\n            }\n        }\n    ],\n    \"errorExistInUpdatingQuestions\": [\n        66,\n        {\n            \"39\": [\n                \"5\"\n            ]\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "crud-on-questions",
+					"item": [
+						{
+							"name": "New Request",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"question_id\": 66,\r\n        \"type\": \"new new new new infi\",\r\n        \"header\": \"its11 new head\",\r\n        \"description\": \"new dec ddfddfd\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new11 answer\",\r\n                \"is_correct\": true,\r\n                \"point\": 1123\r\n            },\r\n            \"2\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            },\r\n            \"5\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            }\r\n        }\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/53/edit/35",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"53",
+										"edit",
+										"35"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "localhost:4000/api/exams/manage/questions/53/edit/35",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/53/edit/35",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"53",
+												"edit",
+												"35"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "402"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"192-PIVLpcjNmSEKY5z/Zae/4xJY67A\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 13:59:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"question_id\": 35,\n        \"id_exam\": 53,\n        \"type\": \"new new new new infi\",\n        \"header\": \"its11 new head\",\n        \"description\": \"new dec ddfddfd\",\n        \"state\": 0,\n        \"rank\": 8,\n        \"file_path\": \".mp3\",\n        \"icon_path\": \".img\",\n        \"default_point\": 55,\n        \"created_at\": \"2023-05-08T08:09:20.000Z\",\n        \"actived_at\": null,\n        \"answers\": [\n            [\n                0,\n                \"m8\",\n                0,\n                888,\n                \"2023-05-08 12:36:18\"\n            ],\n            [\n                1,\n                \"new11 answer\",\n                1,\n                1123,\n                \"2023-05-08 16:50:11\"\n            ],\n            [\n                2,\n                \" index 2\",\n                0,\n                1343141234,\n                \"2023-05-08 16:50:11\"\n            ]\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "localhost:4000/api/exams/manage/questions/53/edit/35",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/53/edit/35",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"53",
+										"edit",
+										"35"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "localhost:4000/api/exams/manage/questions/53/edit/35",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/53/edit/35",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"53",
+												"edit",
+												"35"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "78"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4e-GxKiZZeygSnN7tN2rI0WMMOP4pk\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 14:02:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msg\": \"you have input invalid question(s)\",\n    \"exam_id\": \"53\",\n    \"question_id\": \"35\"\n}"
+								}
+							]
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"question_id\": 66,\r\n        \"type\": \"new new new new infi\",\r\n        \"header\": \"its11 new head\",\r\n        \"description\": \"new dec ddfddfd\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new11 answer\",\r\n                \"is_correct\": true,\r\n                \"point\": 1123\r\n            },\r\n            \"2\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            },\r\n            \"5\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            }\r\n        }\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/exams/manage/questions/53/edit/36",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"exams",
+										"manage",
+										"questions",
+										"53",
+										"edit",
+										"36"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "token",
+												"value": "c33bbe9d844ef1d995f22a2a702bfc7e",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n    {\r\n        \"question_id\": 66,\r\n        \"type\": \"new new new new infi\",\r\n        \"header\": \"its11 new head\",\r\n        \"description\": \"new dec ddfddfd\",\r\n        \"answers\": {\r\n            \"1\": {\r\n                \"answer\": \"new11 answer\",\r\n                \"is_correct\": true,\r\n                \"point\": 1123\r\n            },\r\n            \"2\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            },\r\n            \"5\": {\r\n                \"answer\": \" index 2\",\r\n                \"is_correct\": false,\r\n                \"point\": 1343141234\r\n            }\r\n        }\r\n    }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:4000/api/exams/manage/questions/53/edit/36",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"exams",
+												"manage",
+												"questions",
+												"53",
+												"edit",
+												"36"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "231"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"e7-o5WPGZD7G8RjXf23zCT09aNBw8E\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 May 2023 14:03:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"36\": [\n        {\n            \"answers\": {\n                \"36\": {\n                    \"InsertId\": 0,\n                    \"isFailed\": true,\n                    \"error\": \"FAILED TO INSERTED/UPDATED DATA : Missed For main reference ( 5 ) }\",\n                    \"id\": \"5\"\n                }\n            }\n        },\n        {\n            \"53\": {\n                \"InsertId\": 0,\n                \"isFailed\": false\n            }\n        }\n    ],\n    \"errorExistInUpdatingQuestions\": [\n        {\n            \"36\": [\n                \"5\"\n            ]\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
